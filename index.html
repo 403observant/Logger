@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Logger</title>
+</head>
+<body>
+    <h1>IP Logger</h1>
+    <script>
+        function generateUniqueLink() {
+            var randomString = Math.random().toString(36).substring(2, 8);
+            var uniqueLink = "https://403observant.github.io/" + randomString;
+            return uniqueLink;
+        }
+        var link = generateUniqueLink();
+        console.log("Generated Link: " + link);
+        document.body.innerHTML += "<p>Generated Link: " + link + "</p>";
+    </script>
+</body>
+</html>
